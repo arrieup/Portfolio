@@ -1,0 +1,13 @@
+@use "sass:math"
+
+$block-size: 15%
+$columns: 12
+
+@mixin grid-item--list
+@for $i from 1 through $columns
+    .grid-item--w#{$i}
+        width: $i * $block-size
+
+@include grid-item--list
+.grid-item
+    margin: 10px
