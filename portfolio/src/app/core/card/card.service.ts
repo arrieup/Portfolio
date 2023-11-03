@@ -7,7 +7,7 @@ import { Card } from './card.model';
 export class CardService {
 
   private cardList: Card[]
-  deployDomain = "http://pabloarrieumerlou.com/"
+  deployDomain = "https://pabloarrieumerlou.com/"
   testDomain = "http://localhost:4200/"
 
 
