@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-header">
+        {{currentCard.type}}
+    </div>
+    <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img"
+        aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+        <title>{{currentCard.title}}</title>
+        <image [attr.href]=currentCard.image width="80%" height="80%" x="50px" y="50px"
+            transform="translate(-25,-25)" />
+    </svg>
+    <div class="card-body">
+        <h5 class="card-title">{{currentCard.title}}</h5>
+        <p class="card-text">{{currentCard.description}}</p>
+    </div>
+</div>
