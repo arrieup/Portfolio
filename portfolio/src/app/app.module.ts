@@ -8,6 +8,7 @@ import { DashboardComponent } from './core/dashboard/dashboard.component';
 import { CardComponent } from './core/card/card.component';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './core/navbar/navbar.component';
+import { DeveloppementComponent } from './developpement/developpement.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { NavbarComponent } from './core/navbar/navbar.component';
     DashboardComponent,
     CardComponent,
     NavbarComponent,
+    DeveloppementComponent,
   ],
   imports: [
     NgbModule,
@@ -22,6 +24,7 @@ import { NavbarComponent } from './core/navbar/navbar.component';
     RouterModule.forRoot([
       { path: '', component: DashboardComponent },
       { path: 'dashboard', component: DashboardComponent },
+      { path: 'developpement', component: DeveloppementComponent },
     ]),
     AppRoutingModule
   ],
