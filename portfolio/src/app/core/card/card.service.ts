@@ -20,13 +20,13 @@ export class CardService {
       new Card("Javascript", "Technologie", "Différents environnements maîtrisés", new URL("/assets/logos/JS.png", this.deployDomain))
     ];
     this.devList = [
-      new Card("Jira", "Methodologie", "Backlog", new URL("/assets/dev/JIRA_dashboard.png", this.deployDomain)),
-      new Card("Jira", "Methodologie", "Planning", new URL("/assets/dev/JIRA_planning.png", this.deployDomain)),
+      new Card("Jira", "Methodologie", "Backlog", new URL("/assets/dev/JIRA_Dashboard.png", this.deployDomain)),
+      new Card("Jira", "Methodologie", "Planning", new URL("/assets/dev/JIRA_Planning.png", this.deployDomain)),
       new Card("GitHub", "Methodologie", "Repository", new URL("/assets/dev/GitHub_Repository.png", this.deployDomain)),
       new Card("GitHub", "Methodologie", "Workflows avec GitHub Actions", new URL("/assets/dev/GitHub_CICD.png", this.deployDomain)),
       new Card("Firebase", "Methodologie", "Deploiement sur Firebase Hosting", new URL("/assets/dev/Firebase.png", this.deployDomain)),
-      new Card("Portfolio", "Methodologie", "Version deployée", new URL("/assets/dev/Portfolio_deployed.png", this.deployDomain)),
-      new Card("Portfolio", "Methodologie", "Version locale", new URL("/assets/dev/Portfolio_local.png", this.deployDomain)),
+      new Card("Portfolio", "Methodologie", "Version deployée", new URL("/assets/dev/Portfolio_Deployed.png", this.deployDomain)),
+      new Card("Portfolio", "Methodologie", "Version locale", new URL("/assets/dev/Portfolio_Local.png", this.deployDomain)),
       new Card("Squarespace", "Methodologie", "DNS", new URL("/assets/dev/Squarespace.png", this.deployDomain)),
       new Card("VSCode", "Methodologie", "Dev sur VSCode avec les extensions Jira et GitHub", new URL("/assets/dev/VSCode.png", this.deployDomain)),
     ]
