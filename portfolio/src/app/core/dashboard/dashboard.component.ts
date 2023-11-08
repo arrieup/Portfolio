@@ -12,7 +12,7 @@ export class DashboardComponent {
   mainCards: Card[]
 
   constructor(private service: CardService) {
-    this.mainCards = service.getCards();
+    this.mainCards = service.getTechnoCards();
   }
 
 }
