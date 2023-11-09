@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CardService } from '../core/card/card.service';
 import { Card } from '../core/card/card.model';
+import { DeveloppementService } from './developpement.service';
 
 @Component({
   selector: 'app-developpement',
@@ -10,7 +10,7 @@ import { Card } from '../core/card/card.model';
 export class DeveloppementComponent {
   mainCards: Card[]
 
-  constructor(private service: CardService) {
+  constructor(private service: DeveloppementService) {
     this.mainCards = service.getDevCards();
   }
 
