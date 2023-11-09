@@ -9,6 +9,8 @@ import { CardComponent } from './core/card/card.component';
 import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { DeveloppementComponent } from './developpement/developpement.component';
+import { TechnologieComponent } from './technologie/technologie.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { DeveloppementComponent } from './developpement/developpement.component'
     CardComponent,
     NavbarComponent,
     DeveloppementComponent,
+    TechnologieComponent,
+    ContactComponent,
   ],
   imports: [
     NgbModule,
@@ -24,9 +28,11 @@ import { DeveloppementComponent } from './developpement/developpement.component'
     RouterModule.forRoot([
       { path: '', component: DashboardComponent },
       { path: 'dashboard', component: DashboardComponent },
+      { path: 'technologies', component: TechnologieComponent },
       { path: 'developpement', component: DeveloppementComponent },
+      { path: 'contact', component: ContactComponent },
     ]),
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
