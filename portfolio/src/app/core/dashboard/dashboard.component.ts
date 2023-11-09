@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Card } from '../card/card.model';
 import { CardService } from '../card/card.service';
 import { CardComponent } from '../card/card.component';
+import { TechnologieService } from 'src/app/technologie/technologie.service';
+import { DeveloppementService } from 'src/app/developpement/developpement.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,8 +13,8 @@ import { CardComponent } from '../card/card.component';
 export class DashboardComponent {
   mainCards: Card[]
 
-  constructor(private service: CardService) {
-    this.mainCards = service.getTechnoCards();
+  constructor(private technoService: TechnologieService, private developpementService: DeveloppementService) {
+    this.mainCards = developpementService.getDevCards().concat(technoService.getTechnoCards())
   }
 
 }
